@@ -2,12 +2,16 @@
 
 
 def prime?(number)
+  number = number
+  while number < 30
+
   if number % 2 == 0 || x % 3 == 0 || x % 5 == 0 || x % 7 == 0
-    puts false
+    return false
     number += 1
 
   else
-    puts true
+    return true
     number += 1
   end
+end
 end

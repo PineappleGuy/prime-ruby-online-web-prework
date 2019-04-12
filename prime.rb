@@ -51,13 +51,18 @@ def prime(n)
   end
 end
 =end
-
+=begin
 def prime?(number)
   for i in 2..(number - 1)
-   if (number % i) == 0 || number == -1
+   if (number % i) == 0
     return false
    end
   end
 
   true
  end
+=end
+
+ def prime(n)
+  (2..n/2).none?{|i| n % i == 0}
+end

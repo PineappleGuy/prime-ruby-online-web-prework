@@ -5,7 +5,19 @@ def prime?(number)
   number = number
   while number < 30
 
-  if number % 2 == 0 || x % 3 == 0 || x % 5 == 0 || x % 7 == 0
+  if number % 2 == 0 && number != 2
+    return false
+    number += 1
+
+  elsif number % 3 == 0 && number != 3
+    return false
+    number += 1
+
+  elsif number % 5 == 0 && number != 5
+    return false
+    number += 1
+
+  elsif number % 7 == 0 && number != 7
     return false
     number += 1
 

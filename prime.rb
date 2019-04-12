@@ -54,7 +54,7 @@ end
 
 def prime?(number)
   for i in 2..(number - 1)
-   if (nnumber % i) == 0
+   if (number % i) == 0
     return false
 
   elsif number <= 1

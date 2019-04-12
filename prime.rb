@@ -57,7 +57,7 @@ def prime?(number)
    if (number % i) == 0
     return false
 
-  elsif number <= 1
+  elsif number <= 0
     return false
   else
     return true

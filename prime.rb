@@ -53,14 +53,17 @@ end
 =end
 
 def prime?(number)
-  for i in 2..(number - 1)
-   if (number % i) == 0
+  if number <= 0
     return false
-  elsif number <= 0
-    return false
-  else 
-   end
+  else
+    for i in 2..(number - 1)
+      if (number % i) == 0
+        return false
+      elsif number <= 0
+        return false
+      else
+      end
+      end
+    true
   end
-
-  true
  end

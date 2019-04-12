@@ -35,8 +35,9 @@ def prime?(number)
   end
 end
 =end
+=begin
 def prime(n)
-  
+
   is_prime = true
   for i in 2..n-1
     if n % i == 0
@@ -49,3 +50,14 @@ def prime(n)
     puts "#{n} is not prime."
   end
 end
+=end
+
+def is_prime n
+  for d in 2..(n - 1)
+   if (n % d) == 0
+    return false
+   end
+  end
+
+  true
+ end

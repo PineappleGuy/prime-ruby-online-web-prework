@@ -52,9 +52,12 @@ def prime(n)
 end
 =end
 
-def prime?(n)
-  for d in 2..(n - 1)
-   if (n % d) == 0
+def prime?(number)
+  for i in 2..(number - 1)
+   if (nnumber % i) == 0
+    return false
+
+  elsif number <= 1
     return false
    end
   end

@@ -53,8 +53,8 @@ end
 =end
 
 def prime?(number)
-  for i in -1..(number - 1)
-   if (number % i) == 0
+  for i in 2..(number - 1)
+   if (number % i) == 0 || number == -1
     return false
    end
   end

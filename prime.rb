@@ -1,6 +1,6 @@
 # Add  code here!
-range = (1..float::INFINITY)
-array = [range]
+
+
 def prime?(number)
   x = 2
   x +=1

@@ -53,7 +53,7 @@ end
 =end
 
 def prime?(number)
-  if number <= 0
+  if number <= 1
     return false
   else
     for i in 2..(number - 1)

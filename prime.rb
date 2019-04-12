@@ -9,9 +9,13 @@ def prime?(number)
     return false
     number += 1
 
-  else
+  elsif number = 2 || number == 3 || number == 5 || number == 7
     return true
     number += 1
+
+  else
+    return true
+
+    end
   end
-end
 end
